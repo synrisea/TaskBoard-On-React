@@ -13,8 +13,8 @@ const tasksSlice = createSlice({
 		updateTask: (state, action) => {
 			const index = state.findIndex(task => task.id === action.payload.id);
 			if (index !== -1) {
-			state[index] = action.payload;
-			localStorage.setItem('tasks', JSON.stringify(state));
+				state[index] = action.payload;
+				localStorage.setItem('tasks', JSON.stringify(state));
 			}
 		},
 		deleteTask: (state, action) => {

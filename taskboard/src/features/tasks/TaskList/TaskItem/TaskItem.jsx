@@ -28,7 +28,7 @@ const TaskItem = ({ task }) => {
                     <Link to={`/${task.id}`} className="task-link">{task.title}</Link>
                 </div>
                 <div>
-                    <button className="edit-button" onClick={() => navigate(`/${task.id}/edit`)}>Redact</button>
+                    <button onClick={() => navigate(`/${task.id}/edit`)} className="edit-button">Redact</button>
                     <button onClick={handleDelete} className="button button-red">Delete</button>
                 </div>
             </div>
