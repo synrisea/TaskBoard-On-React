@@ -1,0 +1,15 @@
+.task-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task-details p{
+    margin-top:2rem;
+    font-size: 25px;
+}
+
+.task-details h2{
+    font-size:40px;
+}
